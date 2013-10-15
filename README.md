@@ -3,18 +3,11 @@ Static Landing
 
 The Static Landing index page will take content from 3 sources:
 
-**1) Posts of "Type:Featured"**
+**1) Posts of "Type:Featured"** Each post of type featured will have Title, Subtitle, Image (link), and then a text body. 
 
-Each post of type featured will have Title, Subtitle, Image (link), and then a text body. 
+**2) Post of "Type:Introduction"**Each post of type introduction will have a Title and then a text body. 
 
-**2) Post of "Type:Introduction"** 
-
-Each post of type introduction will have a Title and then a text body. 
-
-**3) Posts of "Type:Portfolio"**
-
-Each post of type portfolio will have Title, Subtitle, Icon (link) and Image (link) and then a text body. 
-
+**3) Posts of "Type:Portfolio"** Each post of type portfolio will have Title, Subtitle, Icon (link) and Image (link) and then a text body. 
 
 
 I think the best thing to do would be to build this as 3 separate plugins:
@@ -25,9 +18,7 @@ I think the best thing to do would be to build this as 3 separate plugins:
 
 **3)** A plugin that makes the Index page take the featured, introduction, and portfolio content.
 
-
-
-The index page should also include a form from a mailchimp.html and use the google analytics plugin as well.
+Note: The index page should also include a form from a mailchimp.html and use the google analytics plugin as well.
 
 
 
