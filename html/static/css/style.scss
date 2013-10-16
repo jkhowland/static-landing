@@ -1,0 +1,446 @@
+$blue-color: #2C82AE;
+$a-color: #2D83AD;
+
+/**/
+a, a:visited,a:hover  {
+	text-decoration: none;
+	outline:0;
+}
+
+p {
+	margin: 0 0 20px 0;	
+}
+
+li {
+	list-style: none;
+}
+
+.grey {
+	color: grey;
+}
+
+.row {
+	margin: 0px;
+}
+
+.button {
+	color: $blue-color;
+	background: #81C042;
+	border: none;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	text-decoration: none;
+	cursor: pointer;
+	padding: 14px 40px 21px;
+	font: 22px/normal "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	-moz-box-shadow: inset 0 -3px 0 #5A862E;
+	-webkit-box-shadow: inset 0 -3px 0 #5A862E;
+	box-shadow: inset 0 -3px 0 #5A862E;
+	-webkit-transition: background-color .15s ease-in-out;
+	-moz-transition: background-color .15s ease-in-out;
+	-o-transition: background-color .15s ease-in-out;
+	-webkit-appearance: none;
+}
+
+.button:hover {
+	background-color: #90c958;
+	color: #fff;
+}
+
+/*body*/
+body {
+	background: #2C82AE;
+	font: 16px/26px "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #3E4754;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+}
+
+/*header*/
+#header {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: $blue-color;
+
+        h1 {
+                font-size: 16px;
+                float: left;
+                margin-top: 9px;
+                padding-left: 20px;
+                line-height: 0px;
+		font-weight: bold;
+                        
+                a {
+                        color: #fff;
+                }
+        }
+
+	a {
+		color: #84BFDF;
+	}
+	a:hover {
+		color: #fff;
+	}
+
+        nav {
+                float: right;
+                padding-right: 20px;
+
+                li {
+                      float: right;
+                      margin-left: 30px;
+                      margin-bottom: 0;
+		      list-style: none;
+                }
+        }
+
+}
+
+#main {
+	.start {
+		background: url("../img/waves-solid.gif") repeat center top $blue-color;
+		text-align: center;
+
+		.start-gradient {
+			background: url("../img/waves-gradient.png") repeat-x center top;
+			padding-top: 30px;
+		}
+		.container {
+			img{
+				width: 100px;
+				height: 64px;
+				margin-bottom: 30px;	
+			}
+
+			h1  {
+				font-weight: normal;		
+				font-style: normal;
+				color: #fff;
+				margin-bottom: 8px;
+				font-size: 46px;
+				line-height: 56px;
+			}
+
+			h2 {
+				color: #ABCDDF;
+				font-weight: normal;
+				font-size: 24px;
+				line-height: 36px;
+			}
+
+			a:hover {
+				color: #fff;
+			}
+
+			.button {
+				margin-top: 30px;
+				margin-bottom: 30px;
+				padding-right: 50px;
+				padding-left: 50px;
+				color: $blue-color;
+			}
+			.prompt {
+				background-color: #F1F1F1;
+				width: 940px;
+				padding-bottom: 30px;
+				margin-bottom: 0px;
+				margin-left: auto;
+				margin-right: auto;
+				font-size: 24px;
+
+				a:hover {
+					color: #84BFDF;
+				}
+			}
+			.big-number {
+				background: url(../img/number-browser.png) no-repeat center top;
+				height: 244px;
+				width: 100%;
+				position: relative;
+
+				.number {
+					font-size: 100px;
+					padding-top: 98px;
+				}
+				.percent {
+					width: 90%;
+					height: 25px;
+					background-color: #CBCBCB;
+					-webkit-border-radius: 500px;
+					-moz-border-radius: 500px;
+					border-radius: 500px;
+					margin-right: auto;
+					margin-left: auto;
+					margin-top: 68px;
+					position: relative;
+
+					.bar {
+						height: 25px;
+						position: absolute;
+						top: 0;
+						left: 0;
+						-webkit-border-radius: 500px;
+						-moz-border-radius: 500px;
+						border-radius: 500px;
+						background: rgb(255, 165, 0);
+						background: -moz-linear-gradient(180deg, rgb(129, 192, 66) 0%, rgb(255, 153, 0) 50%, rgb(230, 75, 59) 100%) rgb(255, 165, 0);
+						background: -webkit-gradient(linear, right bottom, left bottom, from(rgb(129, 192, 66)), color-stop(0.5, rgb(255, 153, 0)), to(rgb(230, 75, 59))) rgb(255, 165, 0);
+					}
+				}
+			}
+		}
+	}		
+
+	.introduce {
+		padding-top: 60px;
+		padding-bottom: 60px;
+		background: rgb(255, 255, 255); 
+
+		p {
+			font-size: 24px;
+			line-height: 36px;
+		}
+
+		.signup {
+			background-color: rgb(241, 241, 241);
+			border: 1px solid rgb(221, 221, 221);
+			padding: 20px 30px 30px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+			position: relative;
+			
+			.free {
+				background-color: rgb(129, 192, 66);
+				color: rgb(255, 255, 255);
+				width: 74px;
+				height: 74px;
+				display: block;
+				text-align: center;
+				font-weight: bold;
+				font-size: 18px;
+				-webkit-border-radius: 1000px;
+				-moz-border-radius: 1000px;
+				border-radius: 1000px;
+				line-height: 70px;
+				position: absolute;
+				right: 0px;
+				top: -37px;
+			}
+
+			input {
+				margin-bottom: 20px;
+			}
+
+			.button {
+				width: 100%;
+				color: white;
+			}
+		}
+		small {
+			font-size: 60%;		
+		}
+		
+	}
+	.features {
+		background-color: rgb(244, 243, 243);
+		border-top: 1px solid rgb(221, 221, 221);
+		padding-top: 60px;
+		padding-bottom: 40px;
+		h3 {
+			font-size: 20px;
+			line-height: 30px;
+			margin-bottom: 0;
+			font-weight: bold;
+			
+			i {
+				margin-right: 6px;
+				color: rgb(157, 166, 179);
+			}
+		}
+		small {
+			font-size: 60%;		
+		}
+	}
+}
+
+footer {
+	background-color: rgb(44, 130, 174);
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: rgb(132, 191, 223);
+	font-size: 14px;
+
+	a,
+        a:hover	{
+		color: #fff;
+	}
+	nav {
+		float: left;
+		padding-left: 10px;
+		
+		ul li{
+			float: left;
+			margin-right: 20px;
+			margin-bottom: 0;
+		}
+
+	}
+	.copyright {
+		float: right;
+		margin-bottom: 0;
+		padding-right: 10px;
+	}
+	
+}
+
+#modal-signup {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background: rgba(255,255,255,.8);
+	z-index: 100;
+	display: none;
+	top: 0;
+	left: 0;
+	h1 {
+		font-size: 24px;
+		font-weight: bold;
+		line-height: 36px;
+		padding-right: 26px;
+		margin-bottom: 11px;
+	}
+	.wrapper{
+		top: 100px;
+		left: 50%;
+		margin-left: -240px;
+		width: 420px;
+		background: #fff;
+		position: absolute;
+		z-index: 101;
+		padding: 30px 40px 34px;
+		border: 1px solid #CCCCCC;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+
+		input {
+			margin-bottom: 20px;
+		}
+			
+		.button {
+			width: 100%;
+			color: white;
+		}
+	}
+	.modal-close {
+		font-size: 22px;
+		line-height: .5;
+		position: absolute;
+		top: 8px;
+		right: 11px;
+		color: #aaa;
+		text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+		font-weight: bold;
+		cursor: pointer;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.container {
+		position: relative;
+		width: 960px;
+		margin: 0 auto;
+		padding: 0;
+	}
+}
+@media only screen and (max-width: 959px) and (min-width: 768px) {
+	.container {
+		position: relative;
+		width: 768px;
+		margin: 0 auto;
+		padding: 0;
+	}
+	#main {
+		.start {
+			.container {
+				.big-number {
+					background: url("../img/number-browser-748.png") no-repeat center top;
+					height: 224px;
+				}	
+				.prompt {
+					width: 748px;
+				}
+			}
+		}
+	
+	}
+}
+
+@media only screen and (max-width: 767px) and (min-width: 480px){
+	.container {
+		position: relative;
+		width: 420px;
+		margin: 0 auto;
+		padding: 0;
+	}
+
+	#main {
+		.start {
+			.container {
+				h1 {
+					font-size: 40px;
+					line-height: 48px;
+				}
+				.big-number {
+					background: url("../img/number-browser-420.png") no-repeat center top;
+					height: 224px;
+					.number {
+						font-size: 80px;
+					}
+				}
+				.prompt {
+					width: 420px;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 479px ) {
+	.container {
+		position: relative;
+		width: 300px;
+		margin: 0 auto;
+		padding: 0;
+
+	}
+	#main {
+		.start {
+			.container {
+				h1 {
+					font-size: 40px;
+					line-height: 48px;
+				}
+				.big-number {
+					background: url(../img/number-browser-300.png) no-repeat center top;
+					height: 185px;
+					.number {
+						font-size: 58px;
+					}
+
+					.percent {
+						margin-top: 34px;
+					}
+				}
+				.prompt {
+					width: 300px;
+					font-size: 18px
+				}
+			}
+		}
+	}
+}
