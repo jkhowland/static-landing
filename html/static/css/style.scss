@@ -265,7 +265,92 @@ body {
 			font-size: 60%;		
 		}
 	}
+
+	.blog {
+		padding-bottom: 120px;
+		a,a:hover {
+			color: white;
+		}
+	}
+	.content {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		background: rgb(255, 255, 255);
+
+		article {
+			margin-bottom: 40px;
+			h1 {
+				font-size: 36px;
+				line-height: 44px;
+				font-weight: bold;
+			}
+
+		}
+
+		section {
+			padding: 20px;
+			margin-bottom: 20px;
+			border: 1px solid rgb(204, 204, 204);
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+		}
+
+		.about {
+			padding: 12px 20px 20px 20px;
+
+			a,a:hover {
+				color: white;
+			}
+			h1 {
+				font-size: 22px;
+				line-height: 34px;
+				margin-bottom: 6px;
+				font-weight: bold;
+			}
+			p {
+				font-size: 14px;
+				line-height: 24px;
+			}
+		}
+
+		.follow {
+			p {
+				margin-bottom: 0px;
+				font-size: 18px;
+				line-height: 24px;
+
+				i {
+					margin-right: 4px;
+					line-height: 12px;
+				}
+			}
+		}
+
+		.recent {
+			padding: 12px 20px 20px 20px;
+
+			h1 {
+				font-size: 22px;
+				font-weight: bold;
+				line-height: 34px;
+				margin-bottom: 6px;
+			}
+
+			ul {
+				margin-bottom: 2px;
+				list-style: none outside;
+
+				li {
+					line-height: 22px;
+					margin-bottom: 12px;
+				}
+			}
+
+		}
+	}
 }
+
 
 footer {
 	background-color: rgb(44, 130, 174);
@@ -376,6 +461,15 @@ footer {
 				}
 			}
 		}
+		.content {
+			.container {
+				.about {
+					a{
+						font-size: 14px;
+					}
+				}
+			}
+		}
 	
 	}
 }
@@ -406,6 +500,20 @@ footer {
 					width: 420px;
 				}
 			}
+		}
+	}
+
+	footer {
+		text-align: center;
+		nav {
+			float: none;
+			ul li {
+				float: none;
+				display: inline;
+			}
+		}
+		.copyright {
+			float: none;
 		}
 	}
 }
@@ -441,6 +549,20 @@ footer {
 					font-size: 18px
 				}
 			}
+		}
+	}
+
+	footer {
+		text-align: center;
+		nav {
+			float: none;
+			ul li {
+				float: none;
+				display: inline;
+			}
+		}
+		.copyright {
+			float: none;
 		}
 	}
 }
