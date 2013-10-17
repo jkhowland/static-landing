@@ -198,6 +198,59 @@ body {
       color: #9da6b3; }
   #main .features small {
     font-size: 60%; }
+#main .blog {
+  padding-bottom: 120px; }
+  #main .blog a, #main .blog a:hover {
+    color: white; }
+#main .content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: white; }
+  #main .content article {
+    margin-bottom: 40px; }
+    #main .content article h1 {
+      font-size: 36px;
+      line-height: 44px;
+      font-weight: bold; }
+  #main .content section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; }
+  #main .content .about {
+    padding: 12px 20px 20px 20px; }
+    #main .content .about a, #main .content .about a:hover {
+      color: white; }
+    #main .content .about h1 {
+      font-size: 22px;
+      line-height: 34px;
+      margin-bottom: 6px;
+      font-weight: bold; }
+    #main .content .about p {
+      font-size: 14px;
+      line-height: 24px; }
+  #main .content .follow p {
+    margin-bottom: 0px;
+    font-size: 18px;
+    line-height: 24px; }
+    #main .content .follow p i {
+      margin-right: 4px;
+      line-height: 12px; }
+  #main .content .recent {
+    padding: 12px 20px 20px 20px; }
+    #main .content .recent h1 {
+      font-size: 22px;
+      font-weight: bold;
+      line-height: 34px;
+      margin-bottom: 6px; }
+    #main .content .recent ul {
+      margin-bottom: 2px;
+      list-style: none outside; }
+      #main .content .recent ul li {
+        line-height: 22px;
+        margin-bottom: 12px; }
 
 footer {
   background-color: #2c82ae;
@@ -281,7 +334,9 @@ footer {
     background: url("../img/number-browser-748.png") no-repeat center top;
     height: 224px; }
   #main .start .container .prompt {
-    width: 748px; } }
+    width: 748px; }
+  #main .content .container .about a {
+    font-size: 14px; } }
 @media only screen and (max-width: 767px) and (min-width: 480px) {
   .container {
     position: relative;
@@ -298,7 +353,17 @@ footer {
     #main .start .container .big-number .number {
       font-size: 80px; }
   #main .start .container .prompt {
-    width: 420px; } }
+    width: 420px; }
+
+  footer {
+    text-align: center; }
+    footer nav {
+      float: none; }
+      footer nav ul li {
+        float: none;
+        display: inline; }
+    footer .copyright {
+      float: none; } }
 @media only screen and (max-width: 479px) {
   .container {
     position: relative;
@@ -318,4 +383,14 @@ footer {
       margin-top: 34px; }
   #main .start .container .prompt {
     width: 300px;
-    font-size: 18px; } }
+    font-size: 18px; }
+
+  footer {
+    text-align: center; }
+    footer nav {
+      float: none; }
+      footer nav ul li {
+        float: none;
+        display: inline; }
+    footer .copyright {
+      float: none; } }
