@@ -45,7 +45,7 @@
 				<nav>
 					<ul>
 						<li>
-							<a href="#" class="modal-signup">Sign Up</a>
+							<a href="#" data-reveal-id="modal-signup" class="modal-signup">Sign Up</a>
 						</li>
 						<li>
 							<a href="{{SITEURL}}/blog">Blog</a>
@@ -64,14 +64,14 @@
 						<ul>
 							<li><a href="/">Home</a></li>
 							<li><a href="{{SITEURL}}/blog">Blog</a></li>
-							<li><a href="#" class="modal-signup" >Sign Up</a></li>
+							<li><a href="#" data-reveal-id="modal-signup" class="modal-signup" >Sign Up</a></li>
 							<li><a href="{{TWITTER_URL}}" target="_blank">Twitter</a></li>
 						</ul>
 					</nav>
 					<p class="copyright">© Copyright 2013 <a href="#">Static Buildup  </a>.</p>
 				</div>	
 			</footer>
-			  <div class="wrapper">
+			  <div class="wrapper reveal-modal" id="modal-signup">
 				<h1>Launching Soon!</h1>
 				<p><strong>Static Buildup</strong> will be launching soon. But you can be first in line to try it out when it’s ready! Plus you'll receive <strong>free tips</strong> on running a successful freelancing business!</p>
 				<!-- Begin MailChimp Signup Form -->
@@ -90,12 +90,11 @@
 				</form>
 				<p class="grey text-center"><small>We'll never send you spam. Cross our hearts.</small></p>
 				<!--End mc_embed_signup-->
-			  	<a class="modal-close" href="#" onclick="">&times</a>
+			  	<a class="modal-close close-reveal-modal" href="#" onclick="">&times</a>
 			  </div>
-			<div id="modal-signup">
-			</div>
 			<script src="{{SITEURL}}/theme/js/jquery-2.0.3.min.js"></script>
 			<script src="{{SITEURL}}/theme/js/bootstrap.min.js"></script>
+			<script src="{{SITEURL}}/theme/js/jquery.reveal.js"></script>
 			<script src="{{SITEURL}}/theme/js/site.js"></script>
 			{% include "includes/ga.html" %}
 			{% block script %}
