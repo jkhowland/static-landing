@@ -36,9 +36,6 @@ li {
   -o-transition: background-color .15s ease-in-out;
   -webkit-appearance: none; }
 
-.button:hover {
-  background: #50afd7; }
-
 .signup {
   background-color: #f1f1f1;
   border: 1px solid #dddddd;
