@@ -1,7 +1,8 @@
 /**/
 a, a:visited, a:hover {
   text-decoration: none;
-  outline: 0; }
+  outline: 0;
+  color: #f04d4e; }
 
 p {
   margin: 0 0 20px 0; }
@@ -16,8 +17,9 @@ li {
   margin: 0px; }
 
 .button {
-  color: #2c82ae;
-  background: #81C042;
+  background: #50afd7;
+  color: white !important;
+  font-weight: bold;
   border: none;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -28,17 +30,13 @@ li {
   cursor: pointer;
   padding: 14px 40px 21px;
   font: 22px/normal "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  -moz-box-shadow: inset 0 -3px 0 #5A862E;
-  -webkit-box-shadow: inset 0 -3px 0 #5A862E;
-  box-shadow: inset 0 -3px 0 #5A862E;
+  -moz-box-shadow: inset 0 -3px 0 #50afd7;
+  -webkit-box-shadow: inset 0 -3px 0 #50afd7;
+  box-shadow: inset 0 -3px 0 #50afd7;
   -webkit-transition: background-color .15s ease-in-out;
   -moz-transition: background-color .15s ease-in-out;
   -o-transition: background-color .15s ease-in-out;
   -webkit-appearance: none; }
-
-.button:hover {
-  background-color: #90c958;
-  color: #fff; }
 
 .signup {
   background-color: #f1f1f1;
@@ -49,27 +47,10 @@ li {
   border-radius: 5px;
   position: relative;
   margin-bottom: 20px; }
-  .signup .free {
-    background-color: #81c042;
-    color: white;
-    width: 74px;
-    height: 74px;
-    display: block;
-    text-align: center;
-    font-weight: bold;
-    font-size: 18px;
-    -webkit-border-radius: 1000px;
-    -moz-border-radius: 1000px;
-    border-radius: 1000px;
-    line-height: 70px;
-    position: absolute;
-    right: 0px;
-    top: -37px; }
   .signup input {
     margin-bottom: 20px; }
   .signup .button {
-    width: 100%;
-    color: white; }
+    width: 100%; }
 
 /*body*/
 body {
@@ -83,20 +64,14 @@ body {
 #header {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #2c82ae; }
+  background-color: #09435b;
+  font-size: 2em; }
   #header h1 {
-    font-size: 16px;
     float: left;
     margin-top: 9px;
     padding-left: 20px;
-    line-height: 0px;
+    line-height: 16px;
     font-weight: bold; }
-    #header h1 a {
-      color: #fff; }
-  #header a {
-    color: #84BFDF; }
-  #header a:hover {
-    color: #fff; }
   #header nav {
     float: right;
     padding-right: 20px; }
@@ -107,14 +82,20 @@ body {
       list-style: none; }
 
 #main .start {
-  background: url("../images/waves-solid.gif") repeat center top #2c82ae;
+  background: -webkit-linear-gradient(top, #09435b, #2ab3bd);
+  background: -moz-linear-gradient(top, #09435b, #2ab3bd);
+  background: -o-linear-gradient(top, #09435b, #2ab3bd);
   text-align: center; }
   #main .start .start-gradient {
-    background: url("../images/waves-gradient.png") repeat-x center top;
-    padding-top: 30px; }
+    padding-top: 30px;
+    position: relative; }
+    #main .start .start-gradient .carousel {
+      position: static; }
+      #main .start .start-gradient .carousel .icon-prev, #main .start .start-gradient .carousel .icon-next {
+        font-size: 60px; }
   #main .start .container .logo {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     margin-bottom: 15px;
     display: inline; }
   #main .start .container h1 {
@@ -129,43 +110,11 @@ body {
     font-weight: normal;
     font-size: 24px;
     line-height: 36px; }
-  #main .start .container a:hover {
-    color: #fff; }
   #main .start .container .button {
     margin-top: 30px;
     margin-bottom: 30px;
     padding-right: 50px;
-    padding-left: 50px;
-    color: #2c82ae; }
-  #main .start .container ul.arrow li a {
-    width: 1em;
-    height: 3.631em;
-    background-color: rgba(255, 255, 255, 0.4);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    text-indent: -9999em;
-    white-space: nowrap;
-    overflow: hidden;
-    display: block;
-    position: absolute; }
-  #main .start .container ul.arrow li a:hover {
-    width: 2em; }
-  #main .start .container .prev {
-    background-image: url("../images/l_arrow.png");
-    top: 90%;
-    left: 0px;
-    box-shadow: 1px 1px 0 1px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 1px 1px 0 1px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 1px 1px 0 1px rgba(0, 0, 0, 0.1);
-    -o-box-shadow: 1px 1px 0 1px rgba(0, 0, 0, 0.1); }
-  #main .start .container .next {
-    background-image: url("../images/r_arrow.png");
-    top: 90%;
-    right: 0;
-    box-shadow: -1px 1px 0 1px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: -1px 1px 0 1px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: -1px 1px 0 1px rgba(0, 0, 0, 0.1);
-    -o-box-shadow: -1px 1px 0 1px rgba(0, 0, 0, 0.1); }
+    padding-left: 50px; }
 #main .introduce {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -192,8 +141,6 @@ body {
     font-size: 60%; }
 #main .blog {
   padding-bottom: 120px; }
-  #main .blog a, #main .blog a:hover {
-    color: white; }
 #main .content {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -219,8 +166,6 @@ body {
     margin-top: 6px; }
   #main .content .about {
     padding: 12px 20px 20px 20px; }
-    #main .content .about a, #main .content .about a:hover {
-      color: white; }
     #main .content .about h1 {
       font-size: 22px;
       line-height: 34px;
@@ -237,8 +182,7 @@ body {
   font-size: 18px;
   line-height: 24px; }
   #main .follow p i {
-    margin-right: 4px;
-    line-height: 12px; }
+    margin-right: 4px; }
 #main .recent {
   padding: 12px 20px 20px 20px; }
   #main .recent h1 {
@@ -255,14 +199,11 @@ body {
       margin-bottom: 12px; }
 
 footer {
-  background-color: #2c82ae;
+  background-color: #09435b;
   padding-top: 30px;
   padding-bottom: 30px;
   color: #84bfdf;
   font-size: 14px; }
-  footer a,
-  footer a:hover {
-    color: #fff; }
   footer nav {
     float: left;
     padding-left: 10px; }
@@ -274,6 +215,36 @@ footer {
     float: right;
     margin-bottom: 0;
     padding-right: 10px; }
+
+.wrapper {
+  top: 100px;
+  left: 50%;
+  margin-left: -210px;
+  width: 420px;
+  background: #fff;
+  position: absolute;
+  z-index: 101;
+  padding: 30px 40px 34px;
+  border: 1px solid #CCCCCC;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  display: none; }
+  .wrapper input {
+    margin-bottom: 20px; }
+  .wrapper .button {
+    width: 100%;
+    color: white; }
+  .wrapper .modal-close {
+    font-size: 22px;
+    line-height: .5;
+    position: absolute;
+    top: 8px;
+    right: 11px;
+    color: #aaa;
+    text-shadow: 0 -1px 1px rbga(0, 0, 0, 0.6);
+    font-weight: bold;
+    cursor: pointer; }
 
 #modal-signup {
   position: fixed;
@@ -290,34 +261,6 @@ footer {
     line-height: 36px;
     padding-right: 26px;
     margin-bottom: 11px; }
-  #modal-signup .wrapper {
-    top: 100px;
-    left: 50%;
-    margin-left: -240px;
-    width: 420px;
-    background: #fff;
-    position: absolute;
-    z-index: 101;
-    padding: 30px 40px 34px;
-    border: 1px solid #CCCCCC;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px; }
-    #modal-signup .wrapper input {
-      margin-bottom: 20px; }
-    #modal-signup .wrapper .button {
-      width: 100%;
-      color: white; }
-  #modal-signup .modal-close {
-    font-size: 22px;
-    line-height: .5;
-    position: absolute;
-    top: 8px;
-    right: 11px;
-    color: #aaa;
-    text-shadow: 0 -1px 1px rbga(0, 0, 0, 0.6);
-    font-weight: bold;
-    cursor: pointer; }
 
 @media only screen and (min-width: 960px) {
   .container {
@@ -330,11 +273,6 @@ footer {
     margin: 0 auto;
     padding: 0; }
 
-  #main .start .container .big-number {
-    background: url("../images/number-browser-748.png") no-repeat center top;
-    height: 224px; }
-  #main .start .container .prompt {
-    width: 748px; }
   #main .content .container .about a {
     font-size: 14px; } }
 @media only screen and (max-width: 767px) and (min-width: 480px) {
@@ -346,13 +284,6 @@ footer {
   #main .start .container h1 {
     font-size: 40px;
     line-height: 48px; }
-  #main .start .container .big-number {
-    background: url("../images/number-browser-420.png") no-repeat center top;
-    height: 224px; }
-    #main .start .container .big-number .number {
-      font-size: 80px; }
-  #main .start .container .prompt {
-    width: 420px; }
 
   footer {
     text-align: center; }
@@ -372,16 +303,6 @@ footer {
   #main .start .container h1 {
     font-size: 40px;
     line-height: 48px; }
-  #main .start .container .big-number {
-    background: url(../images/number-browser-300.png) no-repeat center top;
-    height: 185px; }
-    #main .start .container .big-number .number {
-      font-size: 58px; }
-    #main .start .container .big-number .percent {
-      margin-top: 34px; }
-  #main .start .container .prompt {
-    width: 300px;
-    font-size: 18px; }
 
   footer {
     text-align: center; }
@@ -391,4 +312,8 @@ footer {
         float: none;
         display: inline; }
     footer .copyright {
-      float: none; } }
+      float: none; }
+
+  .wrapper {
+    margin-left: -150px;
+    width: 300px; } }
