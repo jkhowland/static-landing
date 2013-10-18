@@ -1,4 +1,42 @@
 {% extends "base.html" %}
 {% block main %}
+<section class="start blog">
+<div class="start-gradient">
+	<div class="container">
+		<a href="/"><img src="{{SITEURL}}/theme/images/logo.png" alt="Static Buildup" class="logo"/></a>	
+		<h1><a href="#">The Official Joshua Blog</a></h1>
+	</div>
+</div>
+</section>
+<section class="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-7">
+			</div>
+			<div class="col-sm-4 col-sm-offset-1">
+				<aside>
+				<section class="about">
+					<h1>About Joshua</h1>
+					<p><strong>Harpoon</strong> is an app for freelancers that helps eliminate the stress and uncertainty of making enough money.
+					</p>
+					<a href="#" class="button modal-signup">I'm Interested!</a>
+
+				</section>
+				<section class="follow">
+				<p>
+				<a href="{{TWITTER_URL}}" target="_blank"><i class="glyphicon glyphicon-user"></i>Follow Joshua</a>
+				</p>
+				</section>
+				<section class="recent">
+					<h1>Recent Articles</h1>
+					<ul>
+						<li><a href="http://harpoonapp.com/blog/post/a-sneak-peek-at-harpoon">A Sneak Peek at Harpoon</a></li>
+					</ul>
+				</section>
+				</aside>
+			</div>
+		</div>
+	</div>
+</section>
 {% endblock %}
 

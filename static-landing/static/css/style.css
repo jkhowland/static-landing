@@ -89,7 +89,7 @@ body {
     float: left;
     margin-top: 9px;
     padding-left: 20px;
-    line-height: 0px;
+    line-height: 16px;
     font-weight: bold; }
     #header h1 a {
       color: #fff; }
@@ -237,8 +237,7 @@ body {
   font-size: 18px;
   line-height: 24px; }
   #main .follow p i {
-    margin-right: 4px;
-    line-height: 12px; }
+    margin-right: 4px; }
 #main .recent {
   padding: 12px 20px 20px 20px; }
   #main .recent h1 {
@@ -391,4 +390,8 @@ footer {
         float: none;
         display: inline; }
     footer .copyright {
-      float: none; } }
+      float: none; }
+
+  #modal-signup .wrapper {
+    width: 80%;
+    left: center; } }

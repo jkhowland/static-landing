@@ -107,7 +107,7 @@ body {
                 float: left;
                 margin-top: 9px;
                 padding-left: 20px;
-                line-height: 0px;
+                line-height: 16px;
 		font-weight: bold;
                         
                 a {
@@ -325,7 +325,7 @@ body {
 
 				i {
 					margin-right: 4px;
-					line-height: 12px;
+					//line-height: 12px;
 				}
 			}
 		}
@@ -562,6 +562,13 @@ footer {
 		}
 		.copyright {
 			float: none;
+		}
+	}
+
+	#modal-signup {
+		.wrapper {
+			width: 80%;
+			left: center;
 		}
 	}
 }
