@@ -10,19 +10,13 @@ TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = 'en'
 
-# Feed generation is usually not desired when developing
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
-FEED_ALL_RSS = 'feeds/all.rss.xml'
-CATEGORY_FEED_ATOM = None
-TRANSLATION_FEED_ATOM = None
-
 DEFAULT_PAGINATION = 1
 PAGINATED_DIRECT_TEMPLATES = (('index', 'archives',))
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-THEME = "/home/detailyang/work/pelican/static-landing"
+THEME = "/path/to/static-landing"
 
 PLUGIN_PATH = "/home/detailyang/pelican-plugins"
 PLUGINS = ['neighbors',]
@@ -39,3 +33,19 @@ TWITTER_URL = "YOUR TWITTER URL"
 FACEBOOK_URL = "YOUR FACEBOOK URL"
 INSTAGRAM_URL = "YOUR TWITTER URL"
 DRIBBBLE_URL = "YOUR TWITTER URL"
+
+#landing page
+ARTICLE_URL = 'blog/{slug}'
+ARTICLE_SAVE_AS = 'blog/{slug}/index.html'
+BLOG_SAVE_AS = 'blog/index.html'
+DIRECT_TEMPLATES = ('index','blog')
+
+#process the images and favicon.ico
+STATIC_PATHS = ['images',
+		'extra/favicon.ico',
+		]
+EXTRA_PATH_METADATA = {
+		    'extra/favicon.ico': {'path': 'favicon.ico'},
+		        }
+
+JINJA_EXTENSIONS  = ['jinja2.ext.loopcontrols']

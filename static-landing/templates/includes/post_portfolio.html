@@ -1,0 +1,19 @@
+{% set f_count = 0 %}
+{% for article in articles%}
+	{% if article.type | upper == "PORTFOLIO" %}
+		{% set f_count = f_count + 1 %}
+		{% if (f_count + 2)  is divisibleby 3 %}
+			<div class="row">
+		{% endif %}
+		<div class="col-sm-4">
+			<h3><i class="glyphicon {{article.icon}}"></i>{{article.title}}</h3>
+			{{article.content}}
+		</div>
+		{% if f_count  is divisibleby 3 %}
+			</div>
+		{% endif %}
+		{% if f_count == 6 %}
+			{% break %}	
+		{% endif %}
+	{% endif %}
+{% endfor %}

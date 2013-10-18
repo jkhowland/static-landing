@@ -1,0 +1,9 @@
+{% for article in articles %}
+	{% if article.type | upper == "INTRODUCTION"%}
+	<div class="col-sm-6">
+	<p><strong>{{article.title}}</strong></p>
+	{{article.content}}
+	</div>
+	{% break %}
+	{% endif %}
+{% endfor %}

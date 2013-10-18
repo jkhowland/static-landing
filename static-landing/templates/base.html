@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+        	<title>
+        	{% block title %}
+        		{{SITENAME}}
+        	{% endblock %}
+			</title>
+			<!--meta-->
+			<meta http-equiv="content-type" content="text/html;charset=UTF-8">	
+			<meta name="title" content="{{META_TITLE}}"/>
+			<meta name="Author" content="{{META_AUTHOR}}"/>
+			<meta name="description" content="{{META_DESCRIPTION}}"/>
+			<!--viewport-->
+			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+			<!-- Facebook Open Graph-->
+			<meta property="og:title" content="{{META_TITLE}}"/>
+			<meta property="og:description" content="{{META_AUTHOR}}"/>
+			<meta property="og:type" content="website"/>
+			<meta property="og:site_name" content="{{SITENAME}}"/>
+			<meta property="og:url" content="url"/>
+			<meta property="og:image" content="image"/>
+
+			<!-- twitter card-->			
+			<meta property="twitter:card" content="summary"/>
+			<meta property="twitter:site" content="@joshua howland"/>
+			<meta property="twitter:title"content="{{META_TITLE}}"/>
+			<meta property="twitter:description"content="{{META_DESCRIPTION}}"/>
+			<meta property="twitter:image"content="image"/>
+
+			<link rel="catitlotitlenonicat" href="{{SITEURL}}" />
+
+			<!--css-->
+			<link rel="stylesheet" href="{{SITEURL}}/theme/css/reset.css">
+			<link rel="stylesheet" href="{{SITEURL}}/theme/css/bootstrap.min.css">
+			<link rel="stylesheet" href="{{SITEURL}}/theme/css/style.css">
+			{% block css %}
+			{% endblock %}
+		</head>
+		<body>
+			<header id="header">
+			<div class="container">
+				<h1><a href="/">joshua</a></h1>
+				<nav>
+					<ul>
+						<li>
+							<a href="#" class="modal-signup">Sign Up</a>
+						</li>
+						<li>
+							<a href="{{SITEURL}}/blog">Blog</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			</header>
+			<div id="main">
+				{% block main %}
+				{% endblock %}
+			</div>
+			<footer id="footer">
+				<div class="container">
+					<nav>
+						<ul>
+							<li><a href="/">Home</a></li>
+							<li><a href="{{SITEURL}}/blog">Blog</a></li>
+							<li><a href="#" class="modal-signup" >Sign Up</a></li>
+							<li><a href="{{TWITTER_URL}}" target="_blank">Twitter</a></li>
+						</ul>
+					</nav>
+					<p class="copyright">© Copyright 2013 <a href="#">joshua howland </a>.</p>
+				</div>	
+			</footer>
+			<div id="modal-signup">
+			  <div class="wrapper">
+				<h1>Launching Soon!</h1>
+				<p><strong>joshua</strong> will be launching soon. But you can be first in line to try it out when it’s ready! Plus you'll receive <strong>free tips</strong> on running a successful freelancing business!</p>
+				<!-- Begin MailChimp Signup Form -->
+				<form action="http://appsbylift.us2.list-manage.com/subscribe/post?u=274b7588cdec7e982eeaacd6e&amp;id=28013359a1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					
+				<div class="mc-field-group">
+					<input type="email" value="" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Email">
+				</div>
+					<div id="mce-responses" class="clear">
+						<div class="response" id="mce-error-response" style="display:none"></div>
+						<div class="response" id="mce-success-response" style="display:none"></div>
+					</div>	
+					<div class="clear">
+						<input type="submit" value="Notify Me" name="subscribe" id="mc-embedded-subscribe" class="button">
+					</div>
+				</form>
+				<p class="grey text-center"><small>We'll never send you spam. Cross our hearts.</small></p>
+				<!--End mc_embed_signup-->
+			  	<a class="modal-close" href="#" onclick="">&times</a>
+			  </div>
+			</div>
+			<script src="{{SITEURL}}/theme/js/jquery-2.0.3.min.js"></script>
+			<script src="{{SITEURL}}/theme/js/site.js"></script>
+			{% include "includes/ga.html" %}
+			{% block script %}
+			{% endblock %}
+		</body>
+</html>
