@@ -1,3 +1,4 @@
+$header-color: #09435b;
 $blue-color: #2C82AE;
 $a-color: #f04d4e;
 $button-color: #50afd7;
@@ -79,7 +80,7 @@ body {
 #header {
         padding-top: 20px;
         padding-bottom: 20px;
-        background-color: $blue-color;
+        background-color: $header-color;
 
         h1 {
                 font-size: 16px;
