@@ -1,4 +1,5 @@
 $header-color: #09435b;
+$featured-color: #2ab3bd;
 $blue-color: #2C82AE;
 $a-color: #f04d4e;
 $button-color: #50afd7;
@@ -108,11 +109,10 @@ body {
 
 #main {
 	.start {
-		background: url("../images/waves-solid.gif") repeat center top $blue-color;
+		background: $featured-color;
 		text-align: center;
 
 		.start-gradient {
-			background: url("../images/waves-gradient.png") repeat-x center top;
 			padding-top: 30px;
 		}
 		.container {

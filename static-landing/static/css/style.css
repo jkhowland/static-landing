@@ -81,10 +81,9 @@ body {
       list-style: none; }
 
 #main .start {
-  background: url("../images/waves-solid.gif") repeat center top #2c82ae;
+  background: #2ab3bd;
   text-align: center; }
   #main .start .start-gradient {
-    background: url("../images/waves-gradient.png") repeat-x center top;
     padding-top: 30px; }
   #main .start .container .logo {
     width: 100px;
