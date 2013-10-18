@@ -1,5 +1,6 @@
 $header-color: #09435b;
-$featured-color: #2ab3bd;
+$featured-top-color: #09435b;
+$featured-bottom-color: #2ab3bd;
 $blue-color: #2C82AE;
 $a-color: #f04d4e;
 $button-color: #50afd7;
@@ -110,7 +111,9 @@ body {
 
 #main {
 	.start {
-		background: $featured-color;
+		background: -webkit-linear-gradient(top, $featured-top-color, $featured-bottom-color);
+		background: -moz-linear-gradient(top, $featured-top-color, $featured-bottom-color);
+		background: -o-linear-gradient(top, $featured-top-color, $featured-bottom-color);
 		text-align: center;
 
 		.start-gradient {
