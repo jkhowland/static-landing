@@ -115,6 +115,14 @@ body {
 
 		.start-gradient {
 			padding-top: 30px;
+			position: relative;
+
+			.carousel {
+				position: static;
+				.icon-prev, .icon-next {
+					font-size: 60px;
+				}
+			}
 		}
 		.container {
 			.logo{
@@ -123,6 +131,7 @@ body {
 				margin-bottom: 15px;	
 				display: inline;
 			}
+
 
 			h1  {
 				font-weight: normal;		
