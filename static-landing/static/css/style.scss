@@ -117,8 +117,8 @@ body {
 		}
 		.container {
 			.logo{
-				width: 100px;
-				height: 100px;
+				width: 150px;
+				height: 150px;
 				margin-bottom: 15px;	
 				display: inline;
 			}
@@ -137,10 +137,6 @@ body {
 				font-weight: normal;
 				font-size: 24px;
 				line-height: 36px;
-			}
-
-			a:hover {
-				color: $a-color;
 			}
 
 			.button {
