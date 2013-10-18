@@ -18,6 +18,8 @@ li {
 
 .button {
   background: #50afd7;
+  color: white !important;
+  font-weight: bold;
   border: none;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -48,8 +50,7 @@ li {
   .signup input {
     margin-bottom: 20px; }
   .signup .button {
-    width: 100%;
-    color: #f04d4e; }
+    width: 100%; }
 
 /*body*/
 body {
