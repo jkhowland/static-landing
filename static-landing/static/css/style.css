@@ -64,9 +64,9 @@ body {
 #header {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #09435b; }
+  background-color: #09435b;
+  font-size: 2em; }
   #header h1 {
-    font-size: 16px;
     float: left;
     margin-top: 9px;
     padding-left: 20px;
