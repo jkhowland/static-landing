@@ -107,10 +107,10 @@ body {
       list-style: none; }
 
 #main .start {
-  background: url("../img/waves-solid.gif") repeat center top #2c82ae;
+  background: url("../images/waves-solid.gif") repeat center top #2c82ae;
   text-align: center; }
   #main .start .start-gradient {
-    background: url("../img/waves-gradient.png") repeat-x center top;
+    background: url("../images/waves-gradient.png") repeat-x center top;
     padding-top: 30px; }
   #main .start .container img {
     width: 100px;
@@ -147,7 +147,7 @@ body {
     #main .start .container .prompt a:hover {
       color: #84BFDF; }
   #main .start .container .big-number {
-    background: url(../img/number-browser.png) no-repeat center top;
+    background: url(../images/number-browser.png) no-repeat center top;
     height: 244px;
     width: 100%;
     position: relative; }
@@ -343,7 +343,7 @@ footer {
     padding: 0; }
 
   #main .start .container .big-number {
-    background: url("../img/number-browser-748.png") no-repeat center top;
+    background: url("../images/number-browser-748.png") no-repeat center top;
     height: 224px; }
   #main .start .container .prompt {
     width: 748px; }
@@ -360,7 +360,7 @@ footer {
     font-size: 40px;
     line-height: 48px; }
   #main .start .container .big-number {
-    background: url("../img/number-browser-420.png") no-repeat center top;
+    background: url("../images/number-browser-420.png") no-repeat center top;
     height: 224px; }
     #main .start .container .big-number .number {
       font-size: 80px; }
@@ -387,7 +387,7 @@ footer {
     font-size: 40px;
     line-height: 48px; }
   #main .start .container .big-number {
-    background: url(../img/number-browser-300.png) no-repeat center top;
+    background: url(../images/number-browser-300.png) no-repeat center top;
     height: 185px; }
     #main .start .container .big-number .number {
       font-size: 58px; }
