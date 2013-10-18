@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'your name'
 SITENAME = 'your site name'
-SITEURL = 'your url'
+SITEURL = ''
 
 TIMEZONE = 'Europe/Paris'
 
@@ -16,10 +16,10 @@ PAGINATED_DIRECT_TEMPLATES = (('index', 'archives',))
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-THEME = "/path/to/static-landing"
+THEME = "/home/detailyang/work/joshua/static-landing/static-landing"
 
-PLUGIN_PATH = "/home/detailyang/pelican-plugins"
-PLUGINS = ['neighbors',]
+#PLUGIN_PATH = "/home/detailyang/pelican-plugins"
+#PLUGINS = ['neighbors',]
 
 GOOGLE_ANALYTICS = 'UA-30756331-1'#GA code
 
@@ -49,3 +49,10 @@ EXTRA_PATH_METADATA = {
 		        }
 
 JINJA_EXTENSIONS  = ['jinja2.ext.loopcontrols']
+
+#SIGNUP FORM TEXT
+SIGNUP_FORM_TEXT_TITLE = "The Freelancer's Guide"
+SIGNUP_FORM_TEXT_CONTENT = """
+<p>Receive <strong>free tips</strong> on running a successful freelancing business! You’ll also be first in line to try out <strong>Static Buildup</strong> when it’s ready!</p>
+"""
+
