@@ -10,16 +10,20 @@ TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = 'en'
 
-DEFAULT_PAGINATION = 1
-PAGINATED_DIRECT_TEMPLATES = (('index', 'archives',))
+#DEFAULT_PAGINATION = 1
+#PAGINATED_DIRECT_TEMPLATES = (('index', 'archives',))
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
 THEME = "/home/detailyang/work/joshua/static-landing/static-landing"
 
-#PLUGIN_PATH = "/home/detailyang/pelican-plugins"
-#PLUGINS = ['neighbors',]
+#PLUGIN_PATH = "/home/detailyang/work/joshua/static-landing/plugins"
+#PLUGINS = ['recentposts',]
+
+#recentposts
+RECENT_POSTS_MAX = 5
+
 
 GOOGLE_ANALYTICS = 'UA-30756331-1'#GA code
 
