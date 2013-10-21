@@ -229,7 +229,7 @@ footer {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  display: none; }
+  visibility: hidden; }
   .wrapper input {
     margin-bottom: 20px; }
   .wrapper .button {
@@ -246,16 +246,15 @@ footer {
     font-weight: bold;
     cursor: pointer; }
 
-#modal-signup {
+.reveal-modal-bg {
   position: fixed;
   height: 100%;
   width: 100%;
   background: rgba(255, 255, 255, 0.8);
   z-index: 100;
-  display: none;
   top: 0;
   left: 0; }
-  #modal-signup h1 {
+  .reveal-modal-bg h1 {
     font-size: 24px;
     font-weight: bold;
     line-height: 36px;
@@ -281,6 +280,11 @@ footer {
     margin: 0 auto;
     padding: 0; }
 
+  #header {
+    font-size: 1.3em; }
+    #header h1 {
+      font-size: 1.3em; }
+
   #main .start .container h1 {
     font-size: 40px;
     line-height: 48px; }
@@ -299,6 +303,11 @@ footer {
     width: 300px;
     margin: 0 auto;
     padding: 0; }
+
+  #header {
+    font-size: 1.0em; }
+    #header h1 {
+      font-size: 1.0em; }
 
   #main .start .container h1 {
     font-size: 40px;
