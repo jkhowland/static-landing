@@ -7,7 +7,9 @@
 		{% endif %}
 		<div class="col-sm-4">
 			<h3><i class="glyphicon {{article.icon}}"></i>{{article.title}}</h3>
-			<img src="{{SITEURL}}/images/{{article.image}}" alt="">
+			{% if article.image %}
+				<img src="{{SITEURL}}/images/{{article.image}}" alt="">
+			{% endif %}
 			{{article.content}}
 		</div>
 		{% if f_count  is divisibleby 3 %}

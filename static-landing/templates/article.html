@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block main %}
+<section class="start blog">
+<div class="start-gradient">
+	<div class="container">
+		<a href="/"><img src="{{SITEURL}}/theme/images/logo.png" alt="Static Buildup" class="logo"/></a>	
+		<h1><a href="#">The Official Joshua Blog</a></h1>
+	</div>
+</div>
+</section>
+<section class="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-7">
+				<article>
+				<h1><a href="{{SITEURL}}/{{article.url}}">{{article.title}}</a></h1>
+				{{article.content}}
+				</article>
+				<div class="signup">
+					{% include "includes/introduce_signup.html" %}
+				</div>
+			</div>
+			<div class="col-sm-4 col-sm-offset-1">
+				<aside>
+				<section class="share">
+					<h1>Share This Article</h1>
+					<!-- AddThis Button BEGIN -->
+					<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+						<a class="addthis_button_preferred_1"></a>
+						<a class="addthis_button_preferred_2"></a>
+						<a class="addthis_button_preferred_3"></a>
+						<a class="addthis_button_preferred_4"></a>
+						<a class="addthis_button_compact"></a>
+					</div>
+					<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-525f5b1d42e49d90"></script>
+					<!-- AddThis Button END -->
+				</section>
+				<section class="about">
+					<h1>About Joshua</h1>
+					<p><strong>Harpoon</strong> is an app for freelancers that helps eliminate the stress and uncertainty of making enough money.
+					</p>
+					<a href="#" class="button modal-signup">I'm Interested!</a>
+
+				</section>
+				<section class="follow">
+				<p>
+				<a href="{{TWITTER_URL}}" target="_blank"><i class="glyphicon glyphicon-user"></i>Follow Joshua</a>
+				</p>
+				</section>
+				<section class="recent">
+					<h1>Recent Articles</h1>
+					{% include "includes/recent_posts.html" %}
+				</section>
+				</aside>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}
+
