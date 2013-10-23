@@ -1,8 +1,12 @@
 <ul>
+{% set type_count = 0%}
 {% for article in articles %}
-	<li><a href="{{SITEURL}}/{{article.url}}">{{article.title}}</a></li>
-	{% if loop.index >= RECENT_POSTS_MAX %}
+	{% if article.type %}
+	{% set type_count = type_count + 1%}
+		<li><a href="{{SITEURL}}/{{article.url}}">{{article.title}}</a></li>
+	{% if type_count >= RECENT_POSTS_MAX %}
 		{% break %}
+	{% endif %}
 	{% endif %}
 {% endfor %}
 </ul>

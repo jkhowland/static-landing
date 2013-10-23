@@ -10,8 +10,8 @@ TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = 'en'
 
-DEFAULT_PAGINATION = 1
-PAGINATED_DIRECT_TEMPLATES = ('index', 'blog',)
+DEFAULT_PAGINATION = 8
+PAGINATED_DIRECT_TEMPLATES = ('blog',)
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
