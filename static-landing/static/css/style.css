@@ -52,6 +52,10 @@ li {
   .signup .button {
     width: 100%; }
 
+.left,
+.right {
+  background-image: none !important; }
+
 /*body*/
 body {
   background: #2C82AE;
