@@ -64,7 +64,7 @@ body {
 #header {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #09435b; }
+  background-color: #2ab3bd; }
   #header h1 {
     float: left;
     padding-left: 20px;
@@ -204,7 +204,7 @@ body {
       margin-bottom: 12px; }
 
 footer {
-  background-color: #09435b;
+  background-color: #2ab3bd;
   padding-top: 30px;
   padding-bottom: 30px;
   color: white; }
