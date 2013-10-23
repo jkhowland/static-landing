@@ -1,7 +1,7 @@
 <ul>
 {% set type_count = 0%}
 {% for article in articles %}
-	{% if article.type %}
+	{% if not article.type %}
 	{% set type_count = type_count + 1%}
 		<li><a href="{{SITEURL}}/{{article.url}}">{{article.title}}</a></li>
 	{% if type_count >= RECENT_POSTS_MAX %}
