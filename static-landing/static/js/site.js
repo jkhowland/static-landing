@@ -3,4 +3,11 @@ $(function () {
 	$("img").addClass("img-responsive");
 });
 
-/*process modal*/
+/*process retina display*/
+$(function() {
+	if (window.devicePixelRatio > 1) {
+		var lowers = $(".logo").attr('src');	
+		var highres = lowers.replace(".", "@2x.");
+		$(".logo").attr('src', highres);
+	}
+});
