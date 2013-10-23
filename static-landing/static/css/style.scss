@@ -1,12 +1,18 @@
 $header-color: #09435b;
+$footer-color: #09435b;
+
 $featured-top-color: #09435b;
 $featured-bottom-color: #2ab3bd;
+
 $blue-color: #2C82AE;
 $a-color: #f04d4e;
 $button-color: #50afd7;
-$footer-color: #09435b;
+
 $header-size: 1.2em;
 $footer-size: 1.2em;
+
+$header-font-color: white;
+$footer-font-color: white;
 
 /**/
 a, a:visited,a:hover  {
@@ -97,6 +103,7 @@ body {
 		font-size: 100%;
 		a {
 			font-size: $header-size;
+			color: $header-font-color;
 		}
 		
                         
@@ -112,6 +119,7 @@ body {
 		      list-style: none;
 		      a {
 		      	font-size: $header-size;
+			color: $header-font-color;
 		      }
 		      
                 }
@@ -307,7 +315,11 @@ footer {
 	background-color: $footer-color;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	color: rgb(132, 191, 223);
+	color: $footer-font-color;
+
+	a {
+		color: $footer-font-color !important;
+	}
 
 	nav {
 		float: left;

@@ -73,7 +73,8 @@ body {
     margin-bottom: 0px;
     font-size: 100%; }
     #header h1 a {
-      font-size: 1.2em; }
+      font-size: 1.2em;
+      color: white; }
   #header nav {
     float: right;
     padding-right: 20px; }
@@ -82,7 +83,8 @@ body {
       margin-left: 30px;
       list-style: none; }
       #header nav li a {
-        font-size: 1.2em; }
+        font-size: 1.2em;
+        color: white; }
 
 #main .start {
   background: -webkit-linear-gradient(top, #09435b, #2ab3bd);
@@ -205,7 +207,9 @@ footer {
   background-color: #09435b;
   padding-top: 30px;
   padding-bottom: 30px;
-  color: #84bfdf; }
+  color: white; }
+  footer a {
+    color: white !important; }
   footer nav {
     float: left;
     padding-left: 10px; }
