@@ -29,3 +29,5 @@ The blog should be very simple. An example would be http://harpoonapp.com/blog
 **2)** Article pages that include newsletter signup, recent article list, and Twitter link. 
 
 **3)** No need for category, Tags, or archive pages.
+
+
