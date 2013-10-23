@@ -55,7 +55,7 @@ li {
 /*body*/
 body {
   background: #2C82AE;
-  font: 16px/26px "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #3E4754;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
@@ -64,22 +64,25 @@ body {
 #header {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #09435b;
-  font-size: 2em; }
+  background-color: #09435b; }
   #header h1 {
     float: left;
-    margin-top: 9px;
     padding-left: 20px;
-    line-height: 16px;
-    font-weight: bold; }
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 100%; }
+    #header h1 a {
+      font-size: 1.2em; }
   #header nav {
     float: right;
     padding-right: 20px; }
     #header nav li {
       float: right;
       margin-left: 30px;
-      margin-bottom: 0;
       list-style: none; }
+      #header nav li a {
+        font-size: 1.2em; }
 
 #main .start {
   background: -webkit-linear-gradient(top, #09435b, #2ab3bd);
@@ -202,8 +205,7 @@ footer {
   background-color: #09435b;
   padding-top: 30px;
   padding-bottom: 30px;
-  color: #84bfdf;
-  font-size: 14px; }
+  color: #84bfdf; }
   footer nav {
     float: left;
     padding-left: 10px; }
@@ -211,10 +213,15 @@ footer {
       float: left;
       margin-right: 20px;
       margin-bottom: 0; }
+      footer nav ul li a {
+        font-size: 1.2em; }
   footer .copyright {
     float: right;
     margin-bottom: 0;
-    padding-right: 10px; }
+    padding-right: 10px;
+    font-size: 1.2em; }
+    footer .copyright a {
+      font-size: 1em; }
 
 .wrapper {
   top: 100px;
@@ -280,11 +287,6 @@ footer {
     margin: 0 auto;
     padding: 0; }
 
-  #header {
-    font-size: 1.3em; }
-    #header h1 {
-      font-size: 1.3em; }
-
   #main .start .container h1 {
     font-size: 40px;
     line-height: 48px; }
@@ -304,10 +306,12 @@ footer {
     margin: 0 auto;
     padding: 0; }
 
-  #header {
-    font-size: 1.0em; }
-    #header h1 {
-      font-size: 1.0em; }
+  #header h1 {
+    padding-left: 0px; }
+  #header nav {
+    padding-right: 0px; }
+  #header nav li {
+    margin-left: 15px; }
 
   #main .start .container h1 {
     font-size: 40px;
