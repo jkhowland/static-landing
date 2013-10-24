@@ -10,16 +10,16 @@ TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = 'en'
 
-#DEFAULT_PAGINATION = 1
-#PAGINATED_DIRECT_TEMPLATES = (('index', 'archives',))
+DEFAULT_PAGINATION = 8
+PAGINATED_DIRECT_TEMPLATES = ('blog',)
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
 THEME = "/home/detailyang/work/joshua/static-landing/static-landing"
 
-#PLUGIN_PATH = "/home/detailyang/work/joshua/static-landing/plugins"
-#PLUGINS = ['recentposts',]
+PLUGIN_PATH = "/home/detailyang/work/joshua/static-landing/plugins"
+PLUGINS = ['typepaginator',]
 
 #recentposts
 RECENT_POSTS_MAX = 5

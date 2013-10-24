@@ -1,10 +1,18 @@
-$header-color: #09435b;
-$featured-top-color: #09435b;
-$featured-bottom-color: #2ab3bd;
+$header-color: #2ab3bd;
+$footer-color: #2ab3bd;
+
+$featured-top-color: #2ab3bd;
+$featured-bottom-color: white;
+
 $blue-color: #2C82AE;
-$a-color: #f04d4e;
+$a-color: #50afd7;
 $button-color: #50afd7;
-$footer-color: #09435b;
+
+$header-size: 1.2em;
+$footer-size: 1.2em;
+
+$header-font-color: white;
+$footer-font-color: white;
 
 /**/
 a, a:visited,a:hover  {
@@ -70,10 +78,16 @@ li {
 		width: 100%;
 	}
 }
+
+.left,
+.right{
+	background-image: none !important;
+}
+
 /*body*/
 body {
 	background: #2C82AE;
-	font: 16px/26px "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #3E4754;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-size-adjust: 100%;
@@ -84,14 +98,19 @@ body {
         padding-top: 20px;
         padding-bottom: 20px;
         background-color: $header-color;
-	font-size: 2em;
 
         h1 {
                 float: left;
-                margin-top: 9px;
                 padding-left: 20px;
-                line-height: 16px;
 		font-weight: bold;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		font-size: 100%;
+		a {
+			font-size: $header-size;
+			color: $header-font-color;
+		}
+		
                         
         }
 
@@ -102,8 +121,12 @@ body {
                 li {
                       float: right;
                       margin-left: 30px;
-                      margin-bottom: 0;
 		      list-style: none;
+		      a {
+		      	font-size: $header-size;
+			color: $header-font-color;
+		      }
+		      
                 }
         }
 
@@ -129,8 +152,8 @@ body {
 		}
 		.container {
 			.logo{
-				width: 150px;
-				height: 150px;
+				width: 75px;
+				height: 75px;
 				margin-bottom: 15px;	
 				display: inline;
 			}
@@ -297,8 +320,11 @@ footer {
 	background-color: $footer-color;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	color: rgb(132, 191, 223);
-	font-size: 14px;
+	color: $footer-font-color;
+
+	a {
+		color: $footer-font-color !important;
+	}
 
 	nav {
 		float: left;
@@ -308,6 +334,10 @@ footer {
 			float: left;
 			margin-right: 20px;
 			margin-bottom: 0;
+			a {
+				font-size: $footer-size;
+			}
+			
 		}
 
 	}
@@ -315,6 +345,10 @@ footer {
 		float: right;
 		margin-bottom: 0;
 		padding-right: 10px;
+		font-size: $footer-size;
+		a {
+			font-size: 1em;		
+		}
 	}
 	
 }
@@ -404,12 +438,6 @@ footer {
 		padding: 0;
 	}
 
-	#header {
-		font-size: 1.3em;
-		h1 {
-			font-size: 1.3em;
-		}
-	}
 	#main {
 		.start {
 			.container {
@@ -444,9 +472,14 @@ footer {
 
 	}
 	#header {
-		font-size: 1.0em;
 		h1 {
-			font-size: 1.0em;
+			padding-left: 0px;
+		}
+		nav {
+			padding-right: 0px;
+		}
+		nav li {
+			margin-left: 15px;
 		}
 	}
 	#main {
