@@ -60,3 +60,5 @@ SIGNUP_FORM_TEXT_CONTENT = """
 <p>Receive <strong>free tips</strong> on running a successful freelancing business! You’ll also be first in line to try out <strong>Static Buildup</strong> when it’s ready!</p>
 """
 
+#FOLLOW_TEXT
+FOLLOW_TEXT = "Follow us on Twitter"
