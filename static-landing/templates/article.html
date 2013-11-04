@@ -14,7 +14,7 @@
 			<div class="col-sm-7">
 				<article>
 				<h1><a href="{{SITEURL}}/{{article.url}}">{{article.title}}</a></h1>
-				by <a href="{{TWITTER_URL}}">{{article.author}}</a> on {{article.date}}
+				by <a href="{{article.authortwitter}}">{{article.author}}</a> on {{article.date}}
 				<br/>
 				<br/>
 				{{article.content}}
@@ -42,7 +42,7 @@
 					<h1>About Joshua</h1>
 					<p><strong>Harpoon</strong> is an app for freelancers that helps eliminate the stress and uncertainty of making enough money.
 					</p>
-					<a href="#" class="button modal-signup">I'm Interested!</a>
+					<a href="#" data-reveal-id="modal-signup" class="button modal-signup">I'm Interested!</a>
 
 				</section>
 				<section class="follow">
