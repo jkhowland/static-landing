@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'your name'
 SITENAME = 'your site name'
+BLOGNAME = "your blog name"
 SITEURL = ''
 
 TIMEZONE = 'Europe/Paris'
