@@ -94,6 +94,16 @@ li {
 	}
 }
 
+.carousel {
+	position: static;
+	.icon-prev, .icon-next {
+		font-size: 60px;
+	}
+}
+a.carousel-control {
+	color: white;
+}
+
 .left,
 .right{
 	background-image: none !important;
@@ -158,12 +168,6 @@ body {
 			padding-top: 30px;
 			position: relative;
 
-			.carousel {
-				position: static;
-				.icon-prev, .icon-next {
-					font-size: 60px;
-				}
-			}
 		}
 		.container {
 			.logo{
@@ -234,6 +238,55 @@ body {
 			font-size: 60%;		
 		}
 	}
+
+	.reviewer {
+		background-color: white;
+		padding-top: 60px;
+		padding-bottom: 60px;
+		position: relative;
+			.content {
+				position: relative;
+				border: 1px solid #f2f2f2;
+				padding: 30px;
+				border-radius: 2px;
+				background-color: #f0f0f0;
+				p {
+					font-weight: 300;
+					font-size: 19px;
+				}
+			}
+			.content:after {
+				content: "";
+				width:0px; 
+				height:0px; 
+				border:15px solid; 
+				border-color: #f0f0f0 transparent transparent  transparent;
+				position: absolute;
+				bottom: -31px;
+				left: 18px;
+			}
+			.people {
+				margin-top: 20px; 
+				margin-bottom: 20px;
+				.avatar {
+					margin-right: 15px;
+					img {
+						width: 70px;
+						height: 70px;
+						border-radius: 50%;
+					}
+				}
+				.name {
+					padding-top: 1px;
+					margin-bottom: 10px;
+					font-size: 24px;
+					line-height: 40px;
+				}
+				.bio {
+
+				}
+			}
+		}
 
 	.blog {
 		padding-bottom: 120px;

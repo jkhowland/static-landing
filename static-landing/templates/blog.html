@@ -4,7 +4,14 @@
 <div class="start-gradient">
 	<div class="container">
 		<a href="/"><img src="{{SITEURL}}/theme/images/logo.png" alt="Static Buildup" class="logo"/></a>	
-		<h1><a href="{{SITEURL}}">The Official Joshua Blog</a></h1>
+		<h1><a href="{{SITEURL}}">
+				{% if BLOGNAME %}
+					{{BLOGNAME}}
+				{% else %}
+					The Official Joshua Blog
+				{% endif %}
+				</a>
+		</h1>
 	</div>
 </div>
 </section>

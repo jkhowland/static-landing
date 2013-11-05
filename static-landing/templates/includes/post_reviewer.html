@@ -1,0 +1,46 @@
+<div id="carousel-reviewer" class="carousel slide">
+  <div class="carousel-inner">
+	{% set review_count = 0%}
+	{% for article in articles %}
+		{% if article.type | upper == "REVIEW" %}
+			{% if review_count is divisibleby(2)%}
+					{% if review_count == 0%}
+						<div class="item active">
+					{% else %}
+						<div class="item">
+				    {% endif %}
+			{% endif %}
+				{% set review_count =  review_count + 1 %}
+				<div class="col-sm-6">
+				<div class="content">
+					{{article.content}}
+				</div>
+				<div class="people">
+					<div class="avatar pull-left">
+						<img src="{{SITEURL}}/images/{{article.avatar}}" alt="{{article.name}}">
+					</div>
+					<div class="name">
+						<a href="{{article.link}}">{{article.name}}</a>
+					</div>
+					<div class="bio">
+						{{article.bio}}
+					</div>
+				</div>
+			</div>
+				{% if review_count  is divisibleby(2)%}
+					</div>
+				{% endif %}
+		{% endif %}
+	{% endfor %}
+	{% if (review_count + 1) is divisibleby(2) %}
+					</div>
+	{% endif %}
+</div>
+
+</div>
+	<a class="left carousel-control" href="#carousel-reviewer" data-slide="prev">
+	  <span class="icon-prev"></span>
+	</a>
+	<a class="right carousel-control" href="#carousel-reviewer" data-slide="next">
+	  <span class="icon-next"></span>
+	</a>
