@@ -6,7 +6,7 @@
 			<div class="row">
 		{% endif %}
 		<div class="col-sm-4">
-			<h3><i class="glyphicon {{article.icon}}"></i>{{article.title}}</h3>
+			<h3><i class="{{article.icon}} glyphicon"></i>{{article.title}}</h3>
 			{% if article.image %}
 				<img src="{{SITEURL}}/images/{{article.image}}" alt="">
 			{% endif %}
