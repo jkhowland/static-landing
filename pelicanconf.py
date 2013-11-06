@@ -9,6 +9,11 @@ SITEURL = ''
 
 TIMEZONE = 'Europe/Paris'
 
+DEFAULT_DATE = 'fs'
+DATE_FORMATS = { 
+            'en': '%a, %d %b %Y',
+}
+
 DEFAULT_LANG = 'en'
 
 DEFAULT_PAGINATION = 8
