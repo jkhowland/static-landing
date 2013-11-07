@@ -10,8 +10,7 @@
 						<div class="item">
 				    {% endif %}
 			{% endif %}
-				{% set review_count =  review_count + 1 %}
-				<div class="col-sm-6">
+			<div class="col-sm-6">
 				<div class="content">
 					{{article.content}}
 				</div>
@@ -27,6 +26,7 @@
 					</div>
 				</div>
 			</div>
+				{% set review_count =  review_count + 1 %}
 				{% if review_count  is divisibleby(2)%}
 					</div>
 				{% endif %}

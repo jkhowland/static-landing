@@ -4,7 +4,14 @@
 <div class="start-gradient">
 	<div class="container">
 		<a href="/"><img src="{{SITEURL}}/theme/images/logo.png" alt="Static Buildup" class="logo"/></a>	
-		<h1><a href="{{SITEURL}}">The Official Joshua Blog</a></h1>
+		<h1><a href="{{SITEURL}}">
+				{% if BLOGNAME %}
+					{{BLOGNAME}}
+				{% else %}
+					The Official Joshua Blog
+				{% endif %}
+				</a>
+		</h1>
 	</div>
 </div>
 </section>
@@ -14,7 +21,7 @@
 			<div class="col-sm-7">
 				<article>
 				<h1><a href="{{SITEURL}}/{{article.url}}">{{article.title}}</a></h1>
-				by <a href="{{article.authortwitter}}">{{article.author}}</a> on {{article.date}}
+				by <a href="{{article.authortwitter}}">{{article.username}}</a> on {{article.date | strftime("%a, %d %B %Y")}}
 				<br/>
 				<br/>
 				{{article.content}}

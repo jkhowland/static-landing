@@ -67,7 +67,8 @@ li {
     font-size: 60px; }
 
 a.carousel-control {
-  color: white; }
+  color: white;
+  width: 2%; }
 
 .left,
 .right {
