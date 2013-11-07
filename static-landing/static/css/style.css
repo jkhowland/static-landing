@@ -67,8 +67,7 @@ li {
     font-size: 60px; }
 
 a.carousel-control {
-  color: white;
-  width: 2%; }
+  color: white; }
 
 .left,
 .right {
@@ -170,7 +169,7 @@ body {
   #main .reviewer .content {
     position: relative;
     border: 1px solid #f2f2f2;
-    padding: 30px;
+    padding: 15px;
     border-radius: 2px;
     background-color: #f0f0f0; }
     #main .reviewer .content p {
