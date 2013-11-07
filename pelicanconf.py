@@ -16,8 +16,6 @@ DATE_FORMATS = {
 
 DEFAULT_LANG = 'en'
 
-DEFAULT_PAGINATION = 8
-PAGINATED_DIRECT_TEMPLATES = ('blog',)
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
@@ -49,6 +47,11 @@ ARTICLE_URL = 'blog/{slug}'
 ARTICLE_SAVE_AS = 'blog/{slug}/index.html'
 BLOG_SAVE_AS = 'blog/index.html'
 DIRECT_TEMPLATES = ('index','blog')
+AUTHOR_SAVE_AS = ''
+CATEGORY_SAVE_AS = ''
+TAG_SAVE_AS = ''
+DEFAULT_PAGINATION = 8
+PAGINATED_DIRECT_TEMPLATES = ('blog',)
 
 #process the images and favicon.ico
 STATIC_PATHS = ['images',
