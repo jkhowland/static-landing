@@ -10,7 +10,11 @@
 						<div class="item">
 				    {% endif %}
 			{% endif %}
-			<div class="col-sm-6">
+			{% if review_count is divisibleby(2) %}
+			<div class="col-sm-5 col-sm-offset-1">
+			{% else %}
+			<div class="col-sm-5">
+			{% endif %}
 				<div class="content">
 					{{article.content}}
 				</div>
